@@ -1,7 +1,7 @@
 # WebScraping
 Some Web scraping projects: requests, BeatifulSoup, Scrapy, and Selenium.
 
-## Movie Recommender
+## Project 1: Movie Recommender
 
 ### Tools used:
 Libraries: **requests** and **BeautifulSoup**
