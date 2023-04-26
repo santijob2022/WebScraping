@@ -27,10 +27,12 @@ class IMDBSpider(scrapy.Spider):
             yield response.follow(prodUrl, callback=self.parseProduct)
 
         # This part adds the pagination
-        nextPageCss = '.pagingbar__items.pagingbar__items--desktop li.pagingbar__item.pagingbar__item--arrow a::attr(href)'        
+        #nextPageCss = '.pagingbar__items.pagingbar__items--desktop li.pagingbar__item.pagingbar__item--arrow a::attr(href)'
+        nextPageCss= '.pagingbar__items--desktop a.pagingbar__next::attr(href)'
         nextPageUrl = response.css(nextPageCss).get()
         if (nextPageUrl): 
             yield Request(nextPageUrl, callback=self.parseProducts)
+        
 
     def parseProduct(self,response):
         """
@@ -48,7 +50,7 @@ class IMDBSpider(scrapy.Spider):
         yield{
             'Product Name':productName,
             'Available Colors':colors,
-            'Image 1920px':imagesUrls
+            'Images 1920px':imagesUrls
         }
 
 
