@@ -16,8 +16,8 @@ Libraries: **requests** and **BeautifulSoup**
 ### Tools used:
 Libraries: **scrapy** and **Request**
 
-1. The file **[products.csv](https://github.com/santijob2022/WebScraping/blob/master/Scrapy/HugoBoss/products.csv)** contains the final fetched data (pagination was needed in this step).
-2. The columns are Product Name, Available Colors, and Image 1920px.
+1. The file **[products.csv](https://github.com/santijob2022/WebScraping/blob/master/Scrapy/HugoBoss/products.csv)** contains the final fetched data.
+2. The columns are Product Name, Available Colors, and Image 1920px (pagination was used to fetch all the data).
 3. The data was fetched in the following order.
     - Start at the website: https://www.hugoboss.com
     - Then the clothing for men was visited and each type of clothe was visited: https://www.hugoboss.com/us/men-clothing/
