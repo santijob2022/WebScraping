@@ -23,3 +23,9 @@ Libraries: **scrapy** and **Request**
     - Then the clothing for men was visited and each type of clothe was visited: https://www.hugoboss.com/us/men-clothing/
     - Then each product within each type of clothe was visited, for example https://www.hugoboss.com/us/regular-fit-polo-shirt-with-two-tone-micro-pattern/hbna50494991_404.html
     - From this direction, we collected the data: product name, available colors, and images of size 1920px.
+
+## Project 3: Translation-Automation
+Libraries: **Selenium**
+
+1. The site **(https://www.deepl.com/translator)** is used to translate to german the file **[input](https://github.com/santijob2022/WebScraping/blob/master/Selenium/Translation-Automation/input.txt)**.
+2. The result is stored in the file **[translation](https://github.com/santijob2022/WebScraping/blob/master/Selenium/Translation-Automation/translation.txt)**.
